@@ -4,4 +4,4 @@ Nesse trabalho iremos mecher com o que viermos durante as aulas desse semestre v
 <img src="https://img.shields.io/badge/HTML5-ffa500?&logo=html5&logoColor=black&style=for-the-badge">
 <img src="https://img.shields.io/badge/CSS3-0000FF?logo=css3&logoColor=black&style=for-the-badge">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge">
-<img src="https://img.shield.io/badge/SQL-blue?logo=sql&logoColor=yellow&style=for-the-badge>
+<img src="https://img.shield.io/badge/SQL-0000?logo=sql&logoColor=yellow&style=for-the-badge">
