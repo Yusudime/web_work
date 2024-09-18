@@ -10,7 +10,6 @@ const validarTitulo=()=>{
         titulo.value = valor.slice(0,-1);
      }}
 titulo.addEventListener('keyup',(e)=>{
-    console.log(" Parou de Apertou uma tecla");
     validarTitulo();
 });
 titulo.addEventListener('blur',(e)=>{
@@ -19,3 +18,15 @@ titulo.addEventListener('blur',(e)=>{
         alert("titulo muito grande");
        
     }});
+    const validardescricao=()=>{
+        const valor = descricao.value;
+         if (!re.test(valor.slice(-1))){
+            descricao.value = valor.slice(0,-1);
+         }}
+    descricao.addEventListener('keyup',(e)=>{
+        validardescricao();
+    });
+    descricao.addEventListener('blur',(e)=>{   
+        if(descricao.value.length = null){
+            alert("precisa de uma descrição");
+        }});
