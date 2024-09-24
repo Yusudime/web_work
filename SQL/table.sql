@@ -1,7 +1,8 @@
-CREATE Table Form (
+Create TABLE Name (
     id INT PRIMARY KEY,
-    name VARCHAR(250) NOT NULL,
-    description TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    name VARCHAR(200) NOT NULL
+);
+Create TABLE Description (
+    id INT PRIMARY KEY,
+    description TEXT NOT NULL
 );

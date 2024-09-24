@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="temacss" rel="stylesheet" href="/css/style.css">
     <script src="/JS/script.js" defer></script>
-    <title>Document</title>
+    <title>Trabalho Final Web</title>
 </head>
 <body>
     <form action="">
-        Titulo:
-        <input type="text" name="titulo" id="titulo" class="titulo">
+        <div class="input-container">
+            <label for="nome">Nome*</label>
+            <input type="text" name="nome" id="nome">
+            <span class="hide span">Campo Obrigatório</span>
+        </div>
+
+        <div class="input-container">
+            <label for="descrição">Descrição*</label>
+            <input type="text" name="descrição" id="descrição">
+            <span class="hide span">Campo Obrigatório</span>
+        </div>
         <br>
-        Descrição:
-        <input type="text" name="descricao" id="descricao" class="descricao">
-        <br>
-        <input type="radio" name="btn1" id="radio">
-        btn1 <br>
-        <input type="radio" name="btn2" id="radio">
-        btn2 <br>
-        <input type="radio" name="btn3" id="radio">
-        btn3 <br>
-        <input type="radio" name="btn4" id="radio">
-        btn4 <br>
         <div class="btn">
             <input type="submit" value="Enviar" id="btnEnviar">
             <input type="button" value="Adicionar Campo" id="btnAddField">
