@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="temacss" rel="stylesheet" href="/static/css/style.css">
-    <script src="/static/JS/script.js" defer></script>
-    <title>Trabalho Final Web</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>DOM</title>
 </head>
+
 <body>
-    <form action="">
+
+    <form>
         <div class="input-container">
-            <label for="titulo">Titulo*</label>
-            <input type="text" name="titulo" id="titulo">
+            <label for="nome">Nome*</label>
+            <input type="text" name="nome" id="nome">
             <span class="hide span">Campo Obrigatório</span>
         </div>
 
         <div class="input-container">
-            <label for="descrição">Descrição*</label>
-            <input type="text" name="descrição" id="descrição">
+            <label for="telefone">Telefone*</label>
+            <input type="text" name="telefone" id="telefone">
             <span class="hide span">Campo Obrigatório</span>
         </div>
-        <br>
+
+        <div class="input-container">
+            <label for="email">E-mail*</label>
+            <input type="text" name="email" id="email" class="email">
+            <span class="hide span">Campo Obrigatório</span>
+        </div>
+
         <div class="btn">
             <input type="submit" value="Enviar" id="btnEnviar">
             <input type="button" value="Adicionar Campo" id="btnAddField">
         </div>
+
+
     </form>
+
 </body>
+
 </html>
