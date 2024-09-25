@@ -14,6 +14,9 @@ const validarTitulo = () => {
     const valor = titulo.value;
     if (!re.test(valor.slice(-1))) {
         titulo.value = valor.slice(0, -1);
+    } else if (valor.length > 200){
+        alert("O título deve ter no máximo 200 caracteres!");
+
     }
 };
 const toggleTituloField = () => {
@@ -75,6 +78,13 @@ btEnviar.addEventListener('click', (e) => {
         spans[0].classList.remove("hide");
     } else {
         titulo.classList.remove("invalid");
+        spans[0].classList.add("hide");
+    }
+    if (!descricao.value) {
+        descricao.classList.add("invalid");
+        spans[0].classList.remove("hide");
+    } else {    
+        descricao.classList.remove("invalid");
         spans[0].classList.add("hide");
     }
 

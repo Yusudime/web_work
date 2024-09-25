@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
-
+from flask_sqlalchemy import SQLAlchemy
+from settings import db
+db.init_app(app)
 app = Flask(__name__)
 
 @app.route('/')
@@ -27,8 +29,8 @@ def submit():
 
     # Aqui você pode salvar os dados em um banco de dados ou processá-los como necessário.
     print({
-        'title': title,
-        'description': description,
+        'title': titulo,
+        'description': descricao,
         'questions': questions
     })
 
