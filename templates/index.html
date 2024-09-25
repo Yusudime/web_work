@@ -5,32 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="js/scripts.js" defer></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>DOM</title>
+    <script src="/static/js/scripts.js" defer></script>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>trabalho final de web</title>
 </head>
 
 <body>
 
     <form>
         <div class="input-container">
-            <label for="nome">Nome*</label>
-            <input type="text" name="nome" id="nome">
+            <label for="titulo">Titulo*</label>
+            <input type="text" name="titulo" id="titulo">
             <span class="hide span">Campo Obrigatório</span>
         </div>
 
         <div class="input-container">
-            <label for="telefone">Telefone*</label>
-            <input type="text" name="telefone" id="telefone">
+            <label for="descricao">Descrição*</label>
+            <input type="text" name="descricao" id="descricao">
             <span class="hide span">Campo Obrigatório</span>
         </div>
-
-        <div class="input-container">
-            <label for="email">E-mail*</label>
-            <input type="text" name="email" id="email" class="email">
-            <span class="hide span">Campo Obrigatório</span>
-        </div>
-
+        
         <div class="btn">
             <input type="submit" value="Enviar" id="btnEnviar">
             <input type="button" value="Adicionar Campo" id="btnAddField">
