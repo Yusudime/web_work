@@ -2,9 +2,9 @@ const btn = document.querySelector('#btn');
 const titulo = document.querySelector('#titulo');
 const input = document.querySelector('#input');
 const descricao = document.querySelector('#descricao');
-btEnviar = document.querySelector("#btnEnviar");
-spans = document.querySelectorAll('span');
-btAdicionarCampo = document.querySelector('#btnAddField');
+const btEnviar = document.querySelector("#btnEnviar");
+const spans = document.querySelectorAll('span');
+const btnAdicionarCampo = document.querySelector('#btnAddField');
 // declaração de função
 const validarTitulo=()=>{
     const re = /[a-zA-Z]/;
@@ -13,7 +13,7 @@ const validarTitulo=()=>{
         titulo.value = valor.slice(0,-1);
      }}
      let campo = "Novo Campo";
-const adicionarCampo = () => {
+    const adicionarCampo = () => {
      
     const div = document.createElement('div');
         div.classList.add('input-container');
@@ -67,7 +67,7 @@ btEnviar.addEventListener('click', (e) => {
         spans[0].classList.add("hide");
             }
         
-btAdicionarCampo.removeEventListener('click', adicionarCampo);
+btnAdicionarCampo.removeEventListener('click', adicionarCampo);
         
 setTimeout(() => {
     console.log("Timeout!");
