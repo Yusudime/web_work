@@ -34,8 +34,18 @@ const adicionarCampo = () => {
     input.id = campo;
     input.name = campo;
 
+    const radio = document.createElement('input');
+    radio.type = 'radio';
+    radio.name = 'radio';
+
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.name = 'checkbox';
+
     div.appendChild(label);
     div.appendChild(input);
+    div.appendChild(radio);
+    div.appendChild(checkbox);
 
     form.insertBefore(div, form.lastElementChild);
 };

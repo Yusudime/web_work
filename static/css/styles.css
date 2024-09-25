@@ -54,7 +54,7 @@ form input[type='submit']{
     background-color: #32b678;
     color: #f0f0f0;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 form input[type='submit']:hover{
